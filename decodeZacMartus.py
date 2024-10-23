@@ -4,4 +4,3 @@ def decode(encrypted):
         arr = arr + str((int(i) - 3) % 10)
     return arr
 
-
