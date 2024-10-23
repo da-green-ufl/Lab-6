@@ -8,7 +8,10 @@ def encode(password):
     return arr
 
 def decode(encrypted):
-    pass
+    arr = ''
+    for i in encrypted:
+        arr = arr + str((int(i) - 3) % 10)
+    return arr
 
 def main():
     while True:
